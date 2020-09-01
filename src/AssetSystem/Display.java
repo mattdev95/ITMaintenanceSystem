@@ -14,7 +14,6 @@ import java.util.Date;
 /*
 ************************************
 // Author: Matthew Edwards
-// Student ID: B00774765
 // Date created: 09/03/2020
 // Last modified:30/03/2020
 ************************************

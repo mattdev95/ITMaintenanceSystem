@@ -12,7 +12,7 @@ import java.text.ParseException;
 import java.util.ArrayList;
 
 /*
-    Authors: Alex Patterson (B00777593)
+    Authors: Alex Patterson
     Date Created: 13/03/2020
     Last modified: 13/03/2020
 */

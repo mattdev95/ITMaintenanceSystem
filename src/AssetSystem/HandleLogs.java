@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Scanner;
 
 /*
-    Authors: Alex Patterson (B00777593)
+    Authors: Alex Patterson
     Date Created: 11/03/2020
     Last modified: 13/03/2020
 */

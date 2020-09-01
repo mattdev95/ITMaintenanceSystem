@@ -13,7 +13,7 @@ import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 /*
-    Authors: Alex Patterson (B00777593)
+    Authors: Alex Patterson
     Date Created: 13/03/2020
     Last modified: 13/03/2020
 */

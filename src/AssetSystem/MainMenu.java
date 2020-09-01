@@ -12,8 +12,8 @@ import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 /*
-    Authors: Matthew Edwards (B00774765)
-             Alex Patterson (B00777593)
+    Authors: Matthew Edwards
+             Alex Patterson
     Date Created: 11/03/2020
     Last modified: 30/03/2020
 */
