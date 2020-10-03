@@ -23,7 +23,7 @@ public class RunReport extends MainMenu {
 
     private static ArrayList<String[]> logs = new ArrayList<String[]>();  // new array list to store logs
 
-    // create your local variables
+    // create your instance variables
     private int totalHours = 0;
     private int count;
     private int averageHrs;
