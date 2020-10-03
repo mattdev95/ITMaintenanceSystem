@@ -25,7 +25,7 @@ import java.util.Scanner;
 public class NewLog extends MainMenu
 {
 
-    // create your private methods
+    // setup your variables
     private  String date = null;
     private String assID;
     private String hours;
