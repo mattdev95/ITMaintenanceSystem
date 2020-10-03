@@ -20,7 +20,7 @@ import java.util.Date;
 */
 public class Display extends MainMenu {
 
-    // create local variables
+    // create instance variables
     private int count = 0;
     private int countLogs;
     private  String logDate;
