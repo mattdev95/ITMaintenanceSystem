@@ -14,58 +14,26 @@ import java.util.NoSuchElementException;
 /*
 ************************************
 // Author: Matthew Edwards
-<<<<<<< HEAD
-// Student ID: B00774765
-=======
->>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
 // Date created: 09/03/2020
 // Last modified: 30/03/2020
 ************************************
 */
 public class RunReport extends MainMenu {
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74
-    //From a personal project (Alex Patterson, 2020)
+
     private static ArrayList<String[]> logs = new ArrayList<String[]>();  // new array list to store logs
 
     // create your local variables
     private int totalHours = 0;
     private int count = 0;
     private int averageHrs = 0;
-<<<<<<< HEAD
     private int countHr = 0;
     private String hourPosition = "";
-=======
-    private int countHr = 0;
-    private String hourPosition = "";
-=======
-
-    private static ArrayList<String[]> logs = new ArrayList<String[]>();  // new array list to store logs
-
-    // create your instance variables
-    private int totalHours = 0;
-    private int count;
-    private int averageHrs;
-    private int countHr = 0;
-    private String hourPosition;
->>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
->>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74
 
     public void main() throws IOException, ParseException
     {
 
-<<<<<<< HEAD
         this.getLogs(); // call the getLogs copy from the HandleLogs class
-=======
-<<<<<<< HEAD
-        this.getLogs(); // call the getLogs copy from the HandleLogs class
-=======
-        getLogs(); // from the handle log class
->>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
->>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74
         RunReport myReport = new RunReport(); // create an instance of the RunReport class
         myReport.printReport(myReport); // print the report
 
@@ -121,15 +89,7 @@ public class RunReport extends MainMenu {
 
     }
 
-<<<<<<< HEAD
     // this will return a count of all the tasks greater than 4 hours to complete.
-=======
-<<<<<<< HEAD
-    // this will return a count of all the tasks greater than 4 hours to complete.
-=======
-    // this will return a count of all the task greater than 4 hours to complete.
->>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
->>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74
     private int getFourHrTasks() throws ParseException, IOException
     {
         try
@@ -148,29 +108,13 @@ public class RunReport extends MainMenu {
                 if(conHours > 4)
                 {
 
-<<<<<<< HEAD
                     countHr++; // get a count of the hours
-=======
-<<<<<<< HEAD
-                    countHr++; // get a count of the hours
-=======
-                    countHr++;
->>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
->>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74
 
                 }
 
             } // end of the for loop
         }
-<<<<<<< HEAD
         catch(NoSuchElementException er)
-=======
-<<<<<<< HEAD
-        catch(NoSuchElementException er)
-=======
-        catch(NoSuchElementException eu)
->>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
->>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74
         {
 
             System.out.print("Error has occurred");
@@ -219,10 +163,3 @@ public class RunReport extends MainMenu {
     }
 
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
->>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74

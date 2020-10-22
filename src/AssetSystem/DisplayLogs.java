@@ -14,10 +14,6 @@ import java.util.Date;
 /*
 ************************************
 // Author: Matthew Edwards
-<<<<<<< HEAD
-=======
-// Student ID: B00774765
->>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74
 // Date created: 09/03/2020
 // Last modified:30/03/2020
 ************************************
@@ -25,11 +21,7 @@ import java.util.Date;
 public class DisplayLogs extends MainMenu 
 {
 
-<<<<<<< HEAD
-    // create instance variables
-=======
     // create local variables
->>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74
     private int count = 0;
     private int countLogs = 0;
     private String logDate = "";
@@ -46,7 +38,7 @@ public class DisplayLogs extends MainMenu
     //This array will store each of the logs
     private final String[] myLogs = new String[countAllLogs];
     
-    //From a personal project (Alex Patterson, 06/03/2020)
+
     private static ArrayList<String[]> logs = new ArrayList<String[]>();  // new array list to store logs
 
     // create the main class

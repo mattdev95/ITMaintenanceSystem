@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f3d81d84-2928-449b-9530-0f189c054a75" name="Default Changelist" comment="">
+    <list default="true" id="a2b9807b-1d5d-4233-9cae-1f56863db99d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AssetSystem/DeleteLogs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AssetSystem/DeleteLogs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AssetSystem/DisplayLogs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AssetSystem/DisplayLogs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AssetSystem/EditLogs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AssetSystem/EditLogs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AssetSystem/HandleLogs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AssetSystem/HandleLogs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AssetSystem/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AssetSystem/MainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AssetSystem/NewLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AssetSystem/NewLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AssetSystem/RunReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AssetSystem/RunReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AssetSystem/SaveChanges.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AssetSystem/SaveChanges.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +41,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f3d81d84-2928-449b-9530-0f189c054a75" name="Default Changelist" comment="" />
+      <changelist id="a2b9807b-1d5d-4233-9cae-1f56863db99d" name="Default Changelist" comment="" />
       <created>1603377200964</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -53,5 +62,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="808" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603390217301" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1603393012719">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603393012719" />
   </component>
 </project>
