@@ -23,7 +23,7 @@ import java.util.Scanner;
 //This class will let the user delete logs by entering the corresponding id
 public class EditLogs extends MainMenu
 {
-    // setup the local variables
+    // setup the instance variables
     private String attributeToChange = "";
     private String attributeToUse = "";
     private String date = "";
