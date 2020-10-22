@@ -40,8 +40,12 @@ public class SaveChanges extends MainMenu
 <<<<<<< HEAD
         this.getLogs();  // gets the logs from handlelogs
 =======
+<<<<<<< HEAD
+        this.getLogs();  // gets the logs from handlelogs
+=======
         getLogs();  // gets the logs from handlelogs
 >>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
+>>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74
         // checks if there is no changes
         if(ogLogs.equals(logs))
         {

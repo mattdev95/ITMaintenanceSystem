@@ -23,8 +23,13 @@ import java.util.Scanner;
 //This class will let the user delete logs by entering the corresponding id
 public class EditLogs extends MainMenu
 {   
+<<<<<<< HEAD
+    //Matthew Edwards
+    // setup the local variables
+=======
 
     // setup the instance variables
+>>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74
     private String attributeToChange = "";
     private String attributeToUse = "";
     private String date = "";
@@ -41,7 +46,11 @@ public class EditLogs extends MainMenu
     //setup the simple date format
     private SimpleDateFormat myDateFormat;
     
+<<<<<<< HEAD
+    //From a personal project (Alex Patterson, 2020)
+=======
     //From a personal project
+>>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74
     private static ArrayList<String[]> logs = new ArrayList<String[]>(); // new array list to store logs
     
     public void main() throws IOException, ParseException // IOexception is needed for writing to a file in SaveChanges.java

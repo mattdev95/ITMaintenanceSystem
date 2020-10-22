@@ -8,8 +8,11 @@ package AssetSystem;
 import java.io.IOException;
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 import java.text.DateFormat;
 >>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
+>>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -27,14 +30,21 @@ import java.util.Scanner;
 // Last modified: 08/04/2020
 =======
 // Date created: 09/03/2020
+<<<<<<< HEAD
+// Last modified: 08/04/2020
+=======
 // Last modified: 30/03/2020
 >>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
+>>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74
 ************************************
 */
 public class NewLog extends MainMenu
 {
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74
     // create your local variables 
     private String date = "";
     private String assetID = "";
@@ -46,6 +56,8 @@ public class NewLog extends MainMenu
     //setup the simpledateformat
     private SimpleDateFormat myDateFormat;
     
+<<<<<<< HEAD
+=======
     //From a personal project (Alex Patterson, 2020)
 =======
     // setup your variables
@@ -57,6 +69,7 @@ public class NewLog extends MainMenu
 
     // setup the scanner
     public static final Scanner newInput = new Scanner(System.in);
+>>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74
 
 >>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
     private static ArrayList<String[]> logs = new ArrayList<String[]>();   // new array list to store logs
@@ -67,8 +80,12 @@ public class NewLog extends MainMenu
 <<<<<<< HEAD
         this.getLogs(); // call the getLogs copy from the HandleLogs class
 =======
+<<<<<<< HEAD
+        this.getLogs(); // call the getLogs copy from the HandleLogs class
+=======
         getLogs(); // call the getlogs method from
 >>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
+>>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74
         NewLog myNewLog = new NewLog(); // create an instance of the new log
         myNewLog.getUserInput(myNewLog); // call the get user input method
         super.mainMenu(); // return to main menu
@@ -81,8 +98,13 @@ public class NewLog extends MainMenu
     
     // this method will get the date input and validate it
 =======
+<<<<<<< HEAD
+    
+    // this method will get the date input and validate it
+=======
 
 >>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
+>>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74
     private String getDate()
     {
         try
@@ -99,10 +121,17 @@ public class NewLog extends MainMenu
             myDateFormat = new SimpleDateFormat("yyyyMMdd");
             myDateFormat.setLenient(false); // make sure it is lenient and to make sure it follows the date pattern, if not show invalid input
 =======
+<<<<<<< HEAD
+            //Anon. (n.d.) How to parse a date strictly? Available from: https://stackoverflow.com/questions/13088140/java-how-to-parse-a-date-strictly [Accessed 20 March 2020]
+            // this will force a parse exception to happen, to make sure the date matches the date format
+            myDateFormat = new SimpleDateFormat("yyyyMMdd");
+            myDateFormat.setLenient(false); // make sure it is lenient and to make sure it follows the date pattern, if not show invalid input
+=======
             // this will force a parse exception to happen, to make sure the date matches the date format
             DateFormat myDateFormat = new SimpleDateFormat("yyyyMMdd");
             myDateFormat.setLenient(false); // make sure it is lenient or not
 >>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
+>>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74
             myDateFormat.parse(date); // this will force the parse exception, if incorrect
 
         }
@@ -116,8 +145,12 @@ public class NewLog extends MainMenu
 <<<<<<< HEAD
             getDate(); // force re-entry
 =======
+<<<<<<< HEAD
+            getDate(); // force re-entry
+=======
             getDate(); // force entry
 >>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
+>>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74
 
         }
 
@@ -129,8 +162,12 @@ public class NewLog extends MainMenu
 <<<<<<< HEAD
             getDate(); // force re-entry
 =======
+<<<<<<< HEAD
+            getDate(); // force re-entry
+=======
             getDate(); // force entry
 >>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
+>>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74
 
         }
 
@@ -141,8 +178,12 @@ public class NewLog extends MainMenu
 <<<<<<< HEAD
             getDate(); // force re-entry
 =======
+<<<<<<< HEAD
+            getDate(); // force re-entry
+=======
             getDate(); // force entry
 >>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
+>>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74
 
         }
         return date;
@@ -151,13 +192,21 @@ public class NewLog extends MainMenu
     // this method will get the assetID input and validate it
     private String getAssetID()
 =======
+<<<<<<< HEAD
+    // this method will get the assetID input and validate it
+    private String getAssetID()
+=======
 
     private String getAssID()
 >>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
+>>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74
     {
         try
         {
             // this gets the correct asset id
+<<<<<<< HEAD
+            System.out.print("Enter Asset ID (M/P/T/O followed by five digits): ");
+=======
 <<<<<<< HEAD
             System.out.print("Enter Asset ID (M/P/T/O followed by five digits): ");
 
@@ -170,19 +219,31 @@ public class NewLog extends MainMenu
             assetID = validateAssetID.next("[PpTtMmOo]+\\d{5}");
 =======
             System.out.print("Enter Asset ID (P/T/M followed by five digits): ");
+>>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74
 
             // allow the entry to be stored
-            assID = newInput.nextLine();
+            assetID = MainMenu.userInput.nextLine();
 
-            // this will parse the date into the scanner
-            Scanner validate = new Scanner(assID);
+            // this will parse the asset ID into the scanner
+            validateAssetID = new Scanner(assetID);
 
+<<<<<<< HEAD
+            assetID = validateAssetID.next("[PpTtMmOo]+\\d{5}");
+=======
             assID = validate.next("[PpTtMm]+\\d{5}");
 >>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
+>>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74
 
             // this will go through each of the logs and match one if a user enters the id again.
             for(int a = 0; a < logs.size(); a++){
 
+<<<<<<< HEAD
+                if(assetID.equals(logs.get(a)[1])) // if it equals the asset id index position
+                {
+
+                    System.out.println("\n*Error* *No duplicates*\n"); // show warning to the user
+                    getAssetID(); // force re-entry
+=======
 <<<<<<< HEAD
                 if(assetID.equals(logs.get(a)[1])) // if it equals the asset id index position
                 {
@@ -196,11 +257,20 @@ public class NewLog extends MainMenu
                     System.out.println("\n*Error* *No duplicates*\n"); // show warning to the user
                     getAssID(); // force entry
 >>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
+>>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74
 
                 }
 
                 else
                 {
+<<<<<<< HEAD
+                    //get the uppercase of the AssetId input
+                    this.assetID = this.assetID.toUpperCase();
+
+                }
+            }
+            
+=======
 <<<<<<< HEAD
                     //get the uppercase of the AssetId input
                     this.assetID = this.assetID.toUpperCase();
@@ -218,6 +288,7 @@ public class NewLog extends MainMenu
             upperAssID = assID.toUpperCase();
 
 >>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
+>>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74
         }
 
 
@@ -229,9 +300,13 @@ public class NewLog extends MainMenu
 <<<<<<< HEAD
             getAssetID(); // force re-entry
 =======
+<<<<<<< HEAD
+            getAssetID(); // force re-entry
+=======
             // System.out.print("Please enter the Asset ID number: ");
             getAssID(); // force entry
 >>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
+>>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74
 
         }
 
@@ -241,6 +316,9 @@ public class NewLog extends MainMenu
 
             // this will keep asking the user until they entered correctly
             System.out.println("\n*Invalid input*\n");
+<<<<<<< HEAD
+            getAssetID(); // force re-entry
+=======
 <<<<<<< HEAD
             getAssetID(); // force re-entry
 
@@ -254,18 +332,27 @@ public class NewLog extends MainMenu
 =======
             // System.out.print("Please enter the Asset ID number: ");
             getAssID(); // force entry
+>>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74
 
         }
 
-        return upperAssID;
+        return assetID;
 
     }
+<<<<<<< HEAD
+    
+    // this method will get the hours input and validate it
+=======
 >>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
+>>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74
     private String getHours()
     {
 
         try
         {
+<<<<<<< HEAD
+            // this gets the hours
+=======
 <<<<<<< HEAD
             // this gets the hours
             System.out.print("Enter number of hours: ");
@@ -280,17 +367,23 @@ public class NewLog extends MainMenu
             hours = validateHours.next("[0-9]+");
 =======
             // this gets the correct asset id
+>>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74
             System.out.print("Enter number of hours: ");
 
             // allow the entry to be stored
-            hours = newInput.nextLine();
+            hours = MainMenu.userInput.nextLine();
 
-            // this will parse the date into the scanner
-            Scanner validate = new Scanner(hours);
+            // this will parse the hours into the scanner
+            validateHours = new Scanner(hours);
 
+<<<<<<< HEAD
+            // this will check the pattern of the hours
+            hours = validateHours.next("[0-9]+");
+=======
             // this will check the pattern of the asset ID
             assID = validate.next("[0-9]+");
 >>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
+>>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74
 
         }
 
@@ -302,8 +395,12 @@ public class NewLog extends MainMenu
 <<<<<<< HEAD
             getHours(); // force re-entry
 =======
+<<<<<<< HEAD
+            getHours(); // force re-entry
+=======
             getHours(); // force entry
 >>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
+>>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74
 
         }
 
@@ -316,8 +413,12 @@ public class NewLog extends MainMenu
 <<<<<<< HEAD
             getHours(); // force re-entry
 =======
+<<<<<<< HEAD
+            getHours(); // force re-entry
+=======
             getHours(); // force entry
 >>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
+>>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74
 
         }
         catch (StackOverflowError m)
@@ -328,8 +429,12 @@ public class NewLog extends MainMenu
 <<<<<<< HEAD
             getHours(); // force re-entry
 =======
+<<<<<<< HEAD
+            getHours(); // force re-entry
+=======
             getHours(); // force entry
 >>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
+>>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74
 
         }
         return hours;
@@ -345,8 +450,12 @@ public class NewLog extends MainMenu
 <<<<<<< HEAD
         appendLog(myNewLog.getDate(), myNewLog.getAssetID(), myNewLog.getHours());
 =======
+<<<<<<< HEAD
+        appendLog(myNewLog.getDate(), myNewLog.getAssetID(), myNewLog.getHours());
+=======
         appendLog(myNewLog.getDate(), myNewLog.getAssID(), myNewLog.getHours());
 >>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
+>>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74
 
     }
 
@@ -372,8 +481,12 @@ public class NewLog extends MainMenu
 <<<<<<< HEAD
             exitVal = MainMenu.userInput.nextLine().toUpperCase();
 =======
+<<<<<<< HEAD
+            exitVal = MainMenu.userInput.nextLine().toUpperCase();
+=======
             exitVal = newInput.nextLine().toUpperCase();
 >>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
+>>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74
 
             if (exitVal.equals("")) // if the entry is empty
             {
@@ -412,8 +525,12 @@ public class NewLog extends MainMenu
 <<<<<<< HEAD
              exitVal = MainMenu.userInput.nextLine().toUpperCase(); // convert user input to uppercase
 =======
+<<<<<<< HEAD
+             exitVal = MainMenu.userInput.nextLine().toUpperCase(); // convert user input to uppercase
+=======
              exitVal = newInput.nextLine().toUpperCase(); // convert user input to uppercase
 >>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
+>>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74
 
             if (exitVal.equals(""))
             {
