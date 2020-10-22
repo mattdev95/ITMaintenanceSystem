@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a2b9807b-1d5d-4233-9cae-1f56863db99d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AssetSystem/DeleteLogs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AssetSystem/DeleteLogs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AssetSystem/DisplayLogs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AssetSystem/DisplayLogs.java" afterDir="false" />
@@ -12,6 +13,17 @@
       <change beforePath="$PROJECT_DIR$/src/AssetSystem/NewLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AssetSystem/NewLog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AssetSystem/RunReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AssetSystem/RunReport.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AssetSystem/SaveChanges.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AssetSystem/SaveChanges.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/Assignment Team Assessment Declaration.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing Plan.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/AssetSystem/DeleteLogs.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/AssetSystem/DeleteLogs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/AssetSystem/Display.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/AssetSystem/Display.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/AssetSystem/HandleLogs.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/AssetSystem/HandleLogs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/AssetSystem/MainMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/AssetSystem/MainMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/AssetSystem/NewLog.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/AssetSystem/NewLog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/AssetSystem/RunReport.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/AssetSystem/RunReport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/AssetSystem/SaveChanges.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/AssetSystem/SaveChanges.class" afterDir="false" />
+>>>>>>> 7172d316665d2bcb1d5528f2c4338aea0c1ff576
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,9 +74,20 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="808" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603390217301" />
+<<<<<<< HEAD
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1603393012719">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603393012719" />
+=======
+    <state x="578" y="242" key="RollbackChangesDialog" timestamp="1603391533839">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="578" y="242" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603391533839" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1603392280301">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603392280301" />
+>>>>>>> 7172d316665d2bcb1d5528f2c4338aea0c1ff576
   </component>
 </project>
