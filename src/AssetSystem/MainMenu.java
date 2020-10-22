@@ -12,10 +12,17 @@ import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 /*
+<<<<<<< HEAD
     Authors: Matthew Edwards (B00774765)
              Alex Patterson (B00777593)
     Date Created: 11/03/2020
     Last modified: 05/04/2020
+=======
+    Authors: Matthew Edwards
+             Alex Patterson
+    Date Created: 11/03/2020
+    Last modified: 30/03/2020
+>>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
 */
 
 /*
@@ -25,6 +32,7 @@ This will inherit the classes into the main class, so you can gain access to eac
 
 public class MainMenu
 {
+<<<<<<< HEAD
     //Matthew Edwards
     // create your local variable
     private String exitEntryVal;
@@ -36,6 +44,18 @@ public class MainMenu
     public static void main(String[] args) throws IOException, ParseException // IOexception is needed for writing to a file in SaveChanges.java
     {
         //Alex Patterson
+=======
+
+    // create your instance variable
+    private String exitEntryVal;
+
+    // create the scanner object
+    public static final Scanner userInput = new Scanner(System.in);
+
+    public static void main(String[] args) throws IOException, ParseException // IOexception is needed for writing to a file in SaveChanges.java
+    {
+
+>>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
         // reads the log file into the program
         HandleLogs handle = new HandleLogs();
         handle.main();
@@ -56,6 +76,7 @@ public class MainMenu
     }
 
     public void mainMenu() throws IOException, ParseException, NoSuchElementException // IOexception is needed for writing to a file in SaveChanges.java
+<<<<<<< HEAD
     {   
         //Matthew Edwards
         System.out.println("======================================================================="); // for better program formatting
@@ -64,13 +85,28 @@ public class MainMenu
         System.out.print("\nEnter an option: ");
         //Alex Patterson
         option = userInput.nextLine(); // get user input
+=======
+    {
+        System.out.println("======================================================================="); // for better program formatting
+        System.out.println("[1] Display all log entries\n[2] Create new log entry\n[3] Delete a log entry\n[4] Run report\n" +
+                "[5] Save all changes\n[6] Exit" );
+        System.out.print("\nEnter an option: ");
+
+        String option = userInput.nextLine(); // get user input
+>>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
 
         try
         {
 
+<<<<<<< HEAD
             // checks if the input is 1/2/3/4/5/6/7
             Scanner validate = new Scanner(option);
             option = validate.next("[1234567]");
+=======
+            // checks if the input is 1/2/3/4/5/6
+            Scanner validate = new Scanner(option);
+            option = validate.next("[123456]");
+>>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
 
         }
 
@@ -88,14 +124,22 @@ public class MainMenu
             mainMenu(); // calls mainMenu again in order to re obtain user input
 
         }
+<<<<<<< HEAD
         //Alex Patterson
+=======
+
+>>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
         switch (option)
         {
 
 
             case "1":
 
+<<<<<<< HEAD
                 DisplayLogs callDisplay = new DisplayLogs(); // create an instance of the Display class
+=======
+                Display callDisplay = new Display(); // create an instance of the Display class
+>>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
                 callDisplay.main(); // calls the main method in the display class
                 break;
 
@@ -104,6 +148,7 @@ public class MainMenu
                 NewLog callNewLog = new NewLog(); // create an instance of the NewLog class
                 callNewLog.main(); // calls the main method in the NewLog class
                 break;
+<<<<<<< HEAD
             case "3":
 
                 EditLogs callEditLogEntry = new EditLogs(); // create an instance of the EditLogEntry class
@@ -111,24 +156,40 @@ public class MainMenu
                 break;
 
             case "4":
+=======
+
+            case "3":
+>>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
 
                 DeleteLogs callDeleteLog = new DeleteLogs();  // create an instance of the DeleteLogs class
                 callDeleteLog.main(); // calls the main method in the DeleteLogs class
                 break;
 
+<<<<<<< HEAD
             case "5":
+=======
+            case "4":
+>>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
 
                 RunReport myReport = new RunReport(); // create an instance of the RunReport class
                 myReport.main(); // calls the main method in the RunReport class
                 break;
 
+<<<<<<< HEAD
             case "6":
+=======
+            case "5":
+>>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
 
                 SaveChanges callSaveChanges = new SaveChanges(); // create an instance of the SaveChanges class
                 callSaveChanges.main(); // calls the main method in the SaveChanges class
                 break;
 
+<<<<<<< HEAD
             case "7":
+=======
+            case "6":
+>>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
 
                 MainMenu myMenu = new MainMenu(); // create an instance of the MainMenu class
                 myMenu.exitMenu(); // calls the exitMenu method
@@ -136,12 +197,21 @@ public class MainMenu
         }
 
     }
+<<<<<<< HEAD
     
     private void exitMenu() throws IOException, ParseException
     {
         try
         {
             //Matthew Edwards
+=======
+
+    public void exitMenu() throws IOException, ParseException
+    {
+        try
+        {
+
+>>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
             System.out.print("\nAre you sure you want to exit?: ");
 
             exitEntryVal = userInput.nextLine().toUpperCase(); // read user input
@@ -156,7 +226,11 @@ public class MainMenu
 
             else if(exitEntryVal.equals("Y") || exitEntryVal.equals("YES"))
             {
+<<<<<<< HEAD
                 //Alex Patterson
+=======
+
+>>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
                 System.out.println("=======================================================================");
                 System.out.println(" .d8888b.                         888 888888b.                     888 \n" +
                         "d88P  Y88b                        888 888  \"88b                    888 \n" +
@@ -172,7 +246,11 @@ public class MainMenu
                 System.exit(0); // exit program
 
             }
+<<<<<<< HEAD
             //Matthew Edwards
+=======
+
+>>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
             else if(exitEntryVal.equals("N") || exitEntryVal.equals("NO"))
             {
 
@@ -190,7 +268,11 @@ public class MainMenu
 
         }
 
+<<<<<<< HEAD
         //Matthew Edwards
+=======
+
+>>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
         catch(NoSuchElementException eu) // input is whitespace
         {
 
@@ -206,7 +288,11 @@ public class MainMenu
 
             else if(exitEntryVal.equals("Y") || exitEntryVal.equals("YES"))
             {
+<<<<<<< HEAD
                 //Alex Patterson
+=======
+
+>>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
                 System.out.println(" .d8888b.                         888 888888b.                     888 \n" +
                         "d88P  Y88b                        888 888  \"88b                    888 \n" +
                         "888    888                        888 888  .88P                    888 \n" +
@@ -221,7 +307,11 @@ public class MainMenu
                 System.exit(0); // exit the program
 
             }
+<<<<<<< HEAD
             //Matthew Edwards
+=======
+
+>>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
             else if(exitEntryVal.equals("N") || exitEntryVal.equals("NO"))
             {
 
