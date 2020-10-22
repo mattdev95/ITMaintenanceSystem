@@ -21,14 +21,32 @@ import java.util.Scanner;
 //This class will let the user delete logs by entering the corresponding id
 
 public class DeleteLogs extends MainMenu
+<<<<<<< HEAD
         
 {   
 
+=======
+<<<<<<< HEAD
+        
+{   
+    //From a personal project (Alex Patterson, 2020)
+=======
+{
+>>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
+>>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74
     private static ArrayList<String[]> logs = new ArrayList<String[]>(); // new array list to store logs
 
     public void main() throws IOException, ParseException // IOexception is needed for writing to a file in SaveChanges.java
     {
+<<<<<<< HEAD
         this.getLogs(); // copy of logs from HandleLogs to the logs of this class
+=======
+<<<<<<< HEAD
+        this.getLogs(); // copy of logs from HandleLogs to the logs of this class
+=======
+        getLogs(); // copy of logs from HandleLogs to the logs of this class
+>>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
+>>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74
         // checks if there is no log entries
         if(logs.size()==0)
         {
@@ -49,7 +67,15 @@ public class DeleteLogs extends MainMenu
     private String getUserInput() throws IOException, ParseException // IOexception is needed for writing to a file in SaveChanges.java
     {
         //show all logs to choose from
+<<<<<<< HEAD
         DisplayLogs callShowAllLogs = new DisplayLogs();
+=======
+<<<<<<< HEAD
+        DisplayLogs callShowAllLogs = new DisplayLogs();
+=======
+        Display callShowAllLogs = new Display();
+>>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
+>>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74
         callShowAllLogs.displayLogs();
         System.out.print("\nEnter the Asset ID of the entry to delete: ");
         String userInput = null;
@@ -61,7 +87,15 @@ public class DeleteLogs extends MainMenu
             Scanner validate = new Scanner(userInput);
 
             // regular expression first letter must be P/p/T/t/M/m along with 5 digits
+<<<<<<< HEAD
             userInput = validate.next("[PpTtMmOo]+\\d{5}").toUpperCase();
+=======
+<<<<<<< HEAD
+            userInput = validate.next("[PpTtMmOo]+\\d{5}").toUpperCase();
+=======
+            userInput = validate.next("[PpTtMm]+\\d{5}").toUpperCase();
+>>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
+>>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74
         }
         catch (InputMismatchException ex) // input doesn't match regex pattern
         {

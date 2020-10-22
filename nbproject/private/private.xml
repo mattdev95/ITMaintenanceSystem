@@ -5,10 +5,21 @@
         <group>
             <file>file:/C:/Users/Matthew/Documents/NetBeansProjects/ITAssetMaintenanceSystemFinal/src/AssetSystem/SaveChanges.java</file>
             <file>file:/C:/Users/Matthew/Documents/NetBeansProjects/ITAssetMaintenanceSystemFinal/src/AssetSystem/RunReport.java</file>
+<<<<<<< HEAD
             <file>file:/C:/Users/Matthew/Documents/NetBeansProjects/ITAssetMaintenanceSystemFinal/src/AssetSystem/EditLogs.java</file>
             <file>file:/C:/Users/Matthew/Documents/NetBeansProjects/ITAssetMaintenanceSystemFinal/src/AssetSystem/DisplayLogs.java</file>
+=======
+<<<<<<< HEAD
+            <file>file:/C:/Users/Matthew/Documents/NetBeansProjects/ITAssetMaintenanceSystemFinal/src/AssetSystem/EditLogs.java</file>
+            <file>file:/C:/Users/Matthew/Documents/NetBeansProjects/ITAssetMaintenanceSystemFinal/src/AssetSystem/DisplayLogs.java</file>
+            <file>file:/C:/Users/Matthew/Documents/NetBeansProjects/ITAssetMaintenanceSystemFinal/src/AssetSystem/HandleLogs.java</file>
+            <file>file:/C:/Users/Matthew/Documents/NetBeansProjects/ITAssetMaintenanceSystemFinal/src/AssetSystem/NewLog.java</file>
+=======
+            <file>file:/C:/Users/Matthew/Documents/NetBeansProjects/ITAssetMaintenanceSystemFinal/src/AssetSystem/Display.java</file>
+>>>>>>> 740f161f91e41030b167d58e0f0a6dd38763dd74
             <file>file:/C:/Users/Matthew/Documents/NetBeansProjects/ITAssetMaintenanceSystemFinal/src/AssetSystem/NewLog.java</file>
             <file>file:/C:/Users/Matthew/Documents/NetBeansProjects/ITAssetMaintenanceSystemFinal/src/AssetSystem/HandleLogs.java</file>
+>>>>>>> 22cde5f6a5d4de0563fc81d8c94e39abcc6b64c4
             <file>file:/C:/Users/Matthew/Documents/NetBeansProjects/ITAssetMaintenanceSystemFinal/src/AssetSystem/DeleteLogs.java</file>
             <file>file:/C:/Users/Matthew/Documents/NetBeansProjects/ITAssetMaintenanceSystemFinal/src/AssetSystem/MainMenu.java</file>
         </group>
