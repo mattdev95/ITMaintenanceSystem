@@ -15,7 +15,7 @@ import java.util.Scanner;
     Authors: Matthew Edwards
              Alex Patterson
     Date Created: 11/03/2020
-    Last modified: 30/03/2020
+    Last modified: 05/04/2020
 */
 
 /*
@@ -25,16 +25,17 @@ This will inherit the classes into the main class, so you can gain access to eac
 
 public class MainMenu
 {
-
+    //Matthew Edwards
     // create your local variable
     private String exitEntryVal;
+    private String option;
 
     // create the scanner object
     public static final Scanner userInput = new Scanner(System.in);
 
     public static void main(String[] args) throws IOException, ParseException // IOexception is needed for writing to a file in SaveChanges.java
     {
-
+        //Alex Patterson
         // reads the log file into the program
         HandleLogs handle = new HandleLogs();
         handle.main();
@@ -55,20 +56,21 @@ public class MainMenu
     }
 
     public void mainMenu() throws IOException, ParseException, NoSuchElementException // IOexception is needed for writing to a file in SaveChanges.java
-    {
+    {   
+        //Matthew Edwards
         System.out.println("======================================================================="); // for better program formatting
-        System.out.println("[1] Display all log entries\n[2] Create new log entry\n[3] Delete a log entry\n[4] Run report\n" +
-                "[5] Save all changes\n[6] Exit" );
+        System.out.println("[1] Display all log entries\n[2] Create new log entry\n[3] Edit a log entry\n[4] Delete a log entry\n[5] Run report\n" +
+                "[6] Save all changes\n[7] Exit" );
         System.out.print("\nEnter an option: ");
-
-        String option = userInput.nextLine(); // get user input
+        //Alex Patterson
+        option = userInput.nextLine(); // get user input
 
         try
         {
 
-            // checks if the input is 1/2/3/4/5/6
+            // checks if the input is 1/2/3/4/5/6/7
             Scanner validate = new Scanner(option);
-            option = validate.next("[123456]");
+            option = validate.next("[1234567]");
 
         }
 
@@ -86,14 +88,14 @@ public class MainMenu
             mainMenu(); // calls mainMenu again in order to re obtain user input
 
         }
-
+        //Alex Patterson
         switch (option)
         {
 
 
             case "1":
 
-                Display callDisplay = new Display(); // create an instance of the Display class
+                DisplayLogs callDisplay = new DisplayLogs(); // create an instance of the Display class
                 callDisplay.main(); // calls the main method in the display class
                 break;
 
@@ -102,26 +104,31 @@ public class MainMenu
                 NewLog callNewLog = new NewLog(); // create an instance of the NewLog class
                 callNewLog.main(); // calls the main method in the NewLog class
                 break;
-
             case "3":
+
+                EditLogs callEditLogEntry = new EditLogs(); // create an instance of the EditLogEntry class
+                callEditLogEntry.main(); // calls the main method in the EditLogEntry class
+                break;
+
+            case "4":
 
                 DeleteLogs callDeleteLog = new DeleteLogs();  // create an instance of the DeleteLogs class
                 callDeleteLog.main(); // calls the main method in the DeleteLogs class
                 break;
 
-            case "4":
+            case "5":
 
                 RunReport myReport = new RunReport(); // create an instance of the RunReport class
                 myReport.main(); // calls the main method in the RunReport class
                 break;
 
-            case "5":
+            case "6":
 
                 SaveChanges callSaveChanges = new SaveChanges(); // create an instance of the SaveChanges class
                 callSaveChanges.main(); // calls the main method in the SaveChanges class
                 break;
 
-            case "6":
+            case "7":
 
                 MainMenu myMenu = new MainMenu(); // create an instance of the MainMenu class
                 myMenu.exitMenu(); // calls the exitMenu method
@@ -129,12 +136,12 @@ public class MainMenu
         }
 
     }
-
-    public void exitMenu() throws IOException, ParseException
+    
+    private void exitMenu() throws IOException, ParseException
     {
         try
         {
-
+            //Matthew Edwards
             System.out.print("\nAre you sure you want to exit?: ");
 
             exitEntryVal = userInput.nextLine().toUpperCase(); // read user input
@@ -149,7 +156,7 @@ public class MainMenu
 
             else if(exitEntryVal.equals("Y") || exitEntryVal.equals("YES"))
             {
-
+                //Alex Patterson
                 System.out.println("=======================================================================");
                 System.out.println(" .d8888b.                         888 888888b.                     888 \n" +
                         "d88P  Y88b                        888 888  \"88b                    888 \n" +
@@ -165,7 +172,7 @@ public class MainMenu
                 System.exit(0); // exit program
 
             }
-
+            //Matthew Edwards
             else if(exitEntryVal.equals("N") || exitEntryVal.equals("NO"))
             {
 
@@ -183,7 +190,7 @@ public class MainMenu
 
         }
 
-
+        //Matthew Edwards
         catch(NoSuchElementException eu) // input is whitespace
         {
 
@@ -199,7 +206,7 @@ public class MainMenu
 
             else if(exitEntryVal.equals("Y") || exitEntryVal.equals("YES"))
             {
-
+                //Alex Patterson
                 System.out.println(" .d8888b.                         888 888888b.                     888 \n" +
                         "d88P  Y88b                        888 888  \"88b                    888 \n" +
                         "888    888                        888 888  .88P                    888 \n" +
@@ -214,7 +221,7 @@ public class MainMenu
                 System.exit(0); // exit the program
 
             }
-
+            //Matthew Edwards
             else if(exitEntryVal.equals("N") || exitEntryVal.equals("NO"))
             {
 

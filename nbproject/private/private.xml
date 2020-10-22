@@ -5,7 +5,8 @@
         <group>
             <file>file:/C:/Users/Matthew/Documents/NetBeansProjects/ITAssetMaintenanceSystemFinal/src/AssetSystem/SaveChanges.java</file>
             <file>file:/C:/Users/Matthew/Documents/NetBeansProjects/ITAssetMaintenanceSystemFinal/src/AssetSystem/RunReport.java</file>
-            <file>file:/C:/Users/Matthew/Documents/NetBeansProjects/ITAssetMaintenanceSystemFinal/src/AssetSystem/Display.java</file>
+            <file>file:/C:/Users/Matthew/Documents/NetBeansProjects/ITAssetMaintenanceSystemFinal/src/AssetSystem/EditLogs.java</file>
+            <file>file:/C:/Users/Matthew/Documents/NetBeansProjects/ITAssetMaintenanceSystemFinal/src/AssetSystem/DisplayLogs.java</file>
             <file>file:/C:/Users/Matthew/Documents/NetBeansProjects/ITAssetMaintenanceSystemFinal/src/AssetSystem/NewLog.java</file>
             <file>file:/C:/Users/Matthew/Documents/NetBeansProjects/ITAssetMaintenanceSystemFinal/src/AssetSystem/HandleLogs.java</file>
             <file>file:/C:/Users/Matthew/Documents/NetBeansProjects/ITAssetMaintenanceSystemFinal/src/AssetSystem/DeleteLogs.java</file>

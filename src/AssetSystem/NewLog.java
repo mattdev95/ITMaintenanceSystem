@@ -6,7 +6,6 @@
 package AssetSystem;
 
 import java.io.IOException;
-import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -19,28 +18,30 @@ import java.util.Scanner;
 ************************************
 // Author: Matthew Edwards
 // Date created: 09/03/2020
-// Last modified: 30/03/2020
+// Last modified: 08/04/2020
 ************************************
 */
 public class NewLog extends MainMenu
 {
 
-    // create your private methods
-    private  String date = null;
-    private String assID;
-    private String hours;
-    private String exitVal;
-    private String upperAssID;
-
-    // setup the scanner
-    public static final Scanner newInput = new Scanner(System.in);
+    // create your local variables 
+    private String date = "";
+    private String assetID = "";
+    private String hours = "";
+    private String exitVal = "";
+    // setup the Scanner
+    private Scanner validateAssetID;
+    private Scanner validateHours ;
+    //setup the simpledateformat
+    private SimpleDateFormat myDateFormat;
+    
 
     private static ArrayList<String[]> logs = new ArrayList<String[]>();   // new array list to store logs
 
     public void main() throws IOException, ParseException, StackOverflowError
     {
 
-        getLogs(); // call the getlogs method from
+        this.getLogs(); // call the getLogs copy from the HandleLogs class
         NewLog myNewLog = new NewLog(); // create an instance of the new log
         myNewLog.getUserInput(myNewLog); // call the get user input method
         super.mainMenu(); // return to main menu
@@ -49,7 +50,8 @@ public class NewLog extends MainMenu
 
     // this method will get the logs from the handle log class
     private void getLogs() { logs = (ArrayList<String[]>) HandleLogs.getLogs(); }
-
+    
+    // this method will get the date input and validate it
     private String getDate()
     {
         try
@@ -60,9 +62,10 @@ public class NewLog extends MainMenu
             // allow the entry to be stored
             date = MainMenu.userInput.nextLine();
 
+            //Anon. (n.d.) How to parse a date strictly? Available from: https://stackoverflow.com/questions/13088140/java-how-to-parse-a-date-strictly [Accessed 20 March 2020]
             // this will force a parse exception to happen, to make sure the date matches the date format
-            DateFormat myDateFormat = new SimpleDateFormat("yyyyMMdd");
-            myDateFormat.setLenient(false); // make sure it is lenient or not
+            myDateFormat = new SimpleDateFormat("yyyyMMdd");
+            myDateFormat.setLenient(false); // make sure it is lenient and to make sure it follows the date pattern, if not show invalid input
             myDateFormat.parse(date); // this will force the parse exception, if incorrect
 
         }
@@ -73,7 +76,7 @@ public class NewLog extends MainMenu
 
             // allow the user to enter the input again
             System.out.println("\n*Invalid input*\n");
-            getDate(); // force entry
+            getDate(); // force re-entry
 
         }
 
@@ -82,7 +85,7 @@ public class NewLog extends MainMenu
 
             // allow the user to enter the input again
             System.out.println("*Invalid input!*");
-            getDate(); // force entry
+            getDate(); // force re-entry
 
         }
 
@@ -90,48 +93,46 @@ public class NewLog extends MainMenu
         {
 
             System.out.println("\n*Error* *Conform to the YYYYMMDD format*\n");
-            getDate(); // force entry
+            getDate(); // force re-entry
 
         }
         return date;
     }
-
-    private String getAssID()
+    // this method will get the assetID input and validate it
+    private String getAssetID()
     {
         try
         {
             // this gets the correct asset id
-            System.out.print("Enter Asset ID (P/T/M followed by five digits): ");
+            System.out.print("Enter Asset ID (M/P/T/O followed by five digits): ");
 
             // allow the entry to be stored
-            assID = newInput.nextLine();
+            assetID = MainMenu.userInput.nextLine();
 
-            // this will parse the date into the scanner
-            Scanner validate = new Scanner(assID);
+            // this will parse the asset ID into the scanner
+            validateAssetID = new Scanner(assetID);
 
-            assID = validate.next("[PpTtMm]+\\d{5}");
+            assetID = validateAssetID.next("[PpTtMmOo]+\\d{5}");
 
             // this will go through each of the logs and match one if a user enters the id again.
             for(int a = 0; a < logs.size(); a++){
 
-                if(assID.equals(logs.get(a)[1])) // if it equals the asset id index position
+                if(assetID.equals(logs.get(a)[1])) // if it equals the asset id index position
                 {
 
                     System.out.println("\n*Error* *No duplicates*\n"); // show warning to the user
-                    getAssID(); // force entry
+                    getAssetID(); // force re-entry
 
                 }
 
                 else
                 {
-
-                    upperAssID = assID.toUpperCase();
+                    //get the uppercase of the AssetId input
+                    this.assetID = this.assetID.toUpperCase();
 
                 }
             }
-            // this will check the pattern of the asset ID
-            upperAssID = assID.toUpperCase();
-
+            
         }
 
 
@@ -140,8 +141,7 @@ public class NewLog extends MainMenu
 
             // this will keep asking the user until they entered correctly
             System.out.println("\n*Error* *Enter a valid asset ID*\n");
-            // System.out.print("Please enter the Asset ID number: ");
-            getAssID(); // force entry
+            getAssetID(); // force re-entry
 
         }
 
@@ -151,30 +151,31 @@ public class NewLog extends MainMenu
 
             // this will keep asking the user until they entered correctly
             System.out.println("\n*Invalid input*\n");
-            // System.out.print("Please enter the Asset ID number: ");
-            getAssID(); // force entry
+            getAssetID(); // force re-entry
 
         }
 
-        return upperAssID;
+        return assetID;
 
     }
+    
+    // this method will get the hours input and validate it
     private String getHours()
     {
 
         try
         {
-            // this gets the correct asset id
+            // this gets the hours
             System.out.print("Enter number of hours: ");
 
             // allow the entry to be stored
-            hours = newInput.nextLine();
+            hours = MainMenu.userInput.nextLine();
 
-            // this will parse the date into the scanner
-            Scanner validate = new Scanner(hours);
+            // this will parse the hours into the scanner
+            validateHours = new Scanner(hours);
 
-            // this will check the pattern of the asset ID
-            assID = validate.next("[0-9]+");
+            // this will check the pattern of the hours
+            hours = validateHours.next("[0-9]+");
 
         }
 
@@ -183,7 +184,7 @@ public class NewLog extends MainMenu
 
             // this will keep asking the user until they entered correctly
             System.out.println("\n*Error* *Numerical values only*\n");
-            getHours(); // force entry
+            getHours(); // force re-entry
 
         }
 
@@ -193,7 +194,7 @@ public class NewLog extends MainMenu
 
             // this will keep asking the user until they entered correctly
             System.out.println("\n*Invalid input*\n");
-            getHours(); // force entry
+            getHours(); // force re-entry
 
         }
         catch (StackOverflowError m)
@@ -201,7 +202,7 @@ public class NewLog extends MainMenu
 
             // this will keep asking the user until they entered correctly
             System.out.println("\n*Error* *Enter a 1-99 value*\n");
-            getHours(); // force entry
+            getHours(); // force re-entry
 
         }
         return hours;
@@ -214,7 +215,7 @@ public class NewLog extends MainMenu
         System.out.println("=======================================================================");
 
         // add each of the return methods to the array in the append log method
-        appendLog(myNewLog.getDate(), myNewLog.getAssID(), myNewLog.getHours());
+        appendLog(myNewLog.getDate(), myNewLog.getAssetID(), myNewLog.getHours());
 
     }
 
@@ -237,7 +238,7 @@ public class NewLog extends MainMenu
             System.out.print("\nAre you sure you want to add this entry (Y or N)?: ");
 
             // read user input
-            exitVal = newInput.nextLine().toUpperCase();
+            exitVal = MainMenu.userInput.nextLine().toUpperCase();
 
             if (exitVal.equals("")) // if the entry is empty
             {
@@ -273,7 +274,7 @@ public class NewLog extends MainMenu
         catch (NoSuchElementException eu) // input is whitespace
         {
             System.out.print("\nAre you sure you want to add this entry (Y or N)?: ");
-             exitVal = newInput.nextLine().toUpperCase(); // convert user input to uppercase
+             exitVal = MainMenu.userInput.nextLine().toUpperCase(); // convert user input to uppercase
 
             if (exitVal.equals(""))
             {

@@ -18,26 +18,34 @@ import java.util.Date;
 // Last modified:30/03/2020
 ************************************
 */
-public class Display extends MainMenu {
+public class DisplayLogs extends MainMenu 
+{
 
     // create local variables
     private int count = 0;
-    private int countLogs;
-    private  String logDate;
+    private int countLogs = 0;
+    private String logDate = "";
+    private String myDate = "";
+    // setup the simple date format
+    private SimpleDateFormat previousDate;
+    private SimpleDateFormat newDate;
+    //setup the date
+    private Date parsedDate;
 
     // This will count each of the logs
-    private int countAllLogs = countLogs();
+    private final int countAllLogs = countLogs();
 
     //This array will store each of the logs
-    private String[] myLogs = new String[countAllLogs];
-
+    private final String[] myLogs = new String[countAllLogs];
+    
+    //From a personal project (Alex Patterson, 06/03/2020)
     private static ArrayList<String[]> logs = new ArrayList<String[]>();  // new array list to store logs
 
     // create the main class
     public void main() throws IOException, ParseException, IndexOutOfBoundsException
     {
 
-        Display myDisplay = new Display(); // create an instance of the Display class
+        DisplayLogs myDisplay = new DisplayLogs(); // create an instance of the Display class
         myDisplay.displayLogs(); // access the display logs method
         super.mainMenu(); // go back to the main menu
 
@@ -47,9 +55,9 @@ public class Display extends MainMenu {
     public void displayLogs() throws IOException, ParseException {
 
 
-        getLogs(); // this will call the the getLogs from the handle logs class
-        Display myDisplay = new Display(); // this will create an instance of the display class
-        myDisplay.convertLogs(); // this will call the convert logs method
+        this.getLogs(); // call the getLogs copy from the HandleLogs class
+        DisplayLogs myDisplay = new DisplayLogs(); // this will create an instance of the display class
+        myDisplay.convertLogs(myDisplay); // this will call the convert logs method
 
     }
 
@@ -65,7 +73,7 @@ public class Display extends MainMenu {
 
     }
     // this will replace all the commas in each of the logs with spaces.
-    private void convertLogs() throws IOException, IndexOutOfBoundsException, ParseException
+    private void convertLogs(DisplayLogs callDisplay) throws IOException, IndexOutOfBoundsException, ParseException
     {
 
         try
@@ -86,7 +94,7 @@ public class Display extends MainMenu {
 
             } // end of while loop
 
-            printLogs(); // call the method
+            callDisplay.printLogs(); // call the method
 
         }
 
@@ -114,7 +122,7 @@ public class Display extends MainMenu {
 
             }
 
-            // this will print out at the top
+            // this will print a message out at the top of the console
             System.out.println("=======================================================================");
             System.out.println("Date    Asset ID  Hours");
             System.out.println("=======================================================================");
@@ -125,13 +133,15 @@ public class Display extends MainMenu {
                 // get the position of the date
                 logDate = logs.get(i)[0];
 
+                //Pankaj. (n.d.) Java SimpleDateFormat – Java Date Format 
+                //Available from: https://www.journaldev.com/17899/java-simpledateformat-java-date-format [Accessed 19 March 2020]
                 // convert the old format to the new date format
-                SimpleDateFormat oldDate = new SimpleDateFormat("yyyyMMdd");
-                Date parsedDate = oldDate.parse(logDate); // this will parse the date
+                previousDate = new SimpleDateFormat("yyyyMMdd");
+                parsedDate = previousDate.parse(logDate); // this will parse the date to a string 
 
                 // convert to the new date format
-                SimpleDateFormat newDate = new SimpleDateFormat("dd/MM/yyyy");
-                String myDate = newDate.format(parsedDate); // this will change the format, to a new format
+                newDate = new SimpleDateFormat("dd/MM/yyyy");
+                myDate = newDate.format(parsedDate); // this will change the format, to a new format
 
                 // print out the new date format
                 System.out.println(myDate + " " + logs.get(i)[1] + " " + logs.get(i)[2]);

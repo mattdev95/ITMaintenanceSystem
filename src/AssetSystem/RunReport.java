@@ -20,20 +20,20 @@ import java.util.NoSuchElementException;
 */
 public class RunReport extends MainMenu {
 
-
+    //From a personal project (Alex Patterson, 2020)
     private static ArrayList<String[]> logs = new ArrayList<String[]>();  // new array list to store logs
 
     // create your local variables
     private int totalHours = 0;
-    private int count;
-    private int averageHrs;
+    private int count = 0;
+    private int averageHrs = 0;
     private int countHr = 0;
-    private String hourPosition;
+    private String hourPosition = "";
 
     public void main() throws IOException, ParseException
     {
 
-        getLogs(); // from the handle log class
+        this.getLogs(); // call the getLogs copy from the HandleLogs class
         RunReport myReport = new RunReport(); // create an instance of the RunReport class
         myReport.printReport(myReport); // print the report
 
@@ -89,7 +89,7 @@ public class RunReport extends MainMenu {
 
     }
 
-    // this will return a count of all the task greater than 4 hours to complete.
+    // this will return a count of all the tasks greater than 4 hours to complete.
     private int getFourHrTasks() throws ParseException, IOException
     {
         try
@@ -108,13 +108,13 @@ public class RunReport extends MainMenu {
                 if(conHours > 4)
                 {
 
-                    countHr++;
+                    countHr++; // get a count of the hours
 
                 }
 
             } // end of the for loop
         }
-        catch(NoSuchElementException eu)
+        catch(NoSuchElementException er)
         {
 
             System.out.print("Error has occurred");
@@ -163,4 +163,3 @@ public class RunReport extends MainMenu {
     }
 
 }
-

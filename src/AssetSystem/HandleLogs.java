@@ -16,7 +16,7 @@ import java.util.Scanner;
 /*
     Authors: Alex Patterson
     Date Created: 11/03/2020
-    Last modified: 13/03/2020
+    Last modified: 20/03/2020
 */
 
 /*
@@ -24,10 +24,8 @@ This class will be read all logs from the log file and read them into an appropr
  */
 public class HandleLogs extends MainMenu
 {
-    /*
-    logs.get(0)[0]  () is for iterating through logs and [] is for iterating through the elements in that log
-    so System.out.println(logs.get(3)[1]) would print "M43567"
-     */
+    
+    //From a personal project (Alex Patterson, 2020)
     private static ArrayList<String[]> logs = new ArrayList<String[]>();  // list which contains a list of arrays
     private static ArrayList<String[]> ogLogs = new ArrayList<String[]>();  // new array list to store original logs
 

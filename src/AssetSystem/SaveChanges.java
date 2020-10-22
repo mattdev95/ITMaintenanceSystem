@@ -29,7 +29,7 @@ public class SaveChanges extends MainMenu
 
     public void main() throws IOException, ParseException // IOexception is needed for writing to a file in SaveChanges.java
     {
-        getLogs();  // gets the logs from handlelogs
+        this.getLogs();  // gets the logs from handlelogs
         // checks if there is no changes
         if(ogLogs.equals(logs))
         {
