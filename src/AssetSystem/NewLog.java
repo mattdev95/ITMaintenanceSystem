@@ -24,7 +24,7 @@ import java.util.Scanner;
 public class NewLog extends MainMenu
 {
 
-    // create your local variables 
+    // create your instance variables 
     private String date = "";
     private String assetID = "";
     private String hours = "";
