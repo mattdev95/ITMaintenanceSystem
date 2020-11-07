@@ -26,7 +26,7 @@ This will inherit the classes into the main class, so you can gain access to eac
 public class MainMenu
 {
     //Matthew Edwards
-    // create your local variable
+    // create your instance variable
     private String exitEntryVal;
     private String option;
 
